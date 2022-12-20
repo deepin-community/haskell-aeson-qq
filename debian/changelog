@@ -1,0 +1,111 @@
+haskell-aeson-qq (0.8.3-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:36:23 +0800
+
+haskell-aeson-qq (0.8.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Tue, 26 May 2020 09:33:48 -0700
+
+haskell-aeson-qq (0.8.2-5) unstable; urgency=medium
+
+  * Remove build dependency on libghc-parsec3-dev (provided by ghc-
+    8.4.3)
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Wed, 03 Oct 2018 12:06:10 +0300
+
+haskell-aeson-qq (0.8.2-4) unstable; urgency=medium
+
+  * Remove build dependency on libghc-text-dev (provided by ghc-8.4.3)
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Mon, 01 Oct 2018 13:47:25 +0300
+
+haskell-aeson-qq (0.8.2-3) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Set Rules-Requires-Root to no.
+
+  [ Ilias Tsitsimpis ]
+  * Bump debhelper compat level to 10
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Sun, 30 Sep 2018 21:01:38 +0300
+
+haskell-aeson-qq (0.8.2-2) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Change Priority to optional. Since Debian Policy version 4.0.1,
+    priority extra has been deprecated.
+  * Use the HTTPS form of the copyright-format URL
+  * Modify d/watch and Source field in d/copyright to use HTTPS
+  * Declare compliance with Debian policy 4.1.1
+  * Use salsa.debian.org URLs in Vcs-{Browser,Git} fields
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 4.1.4.
+
+ -- Clint Adams <clint@debian.org>  Mon, 09 Apr 2018 20:04:40 -0400
+
+haskell-aeson-qq (0.8.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Thu, 06 Jul 2017 18:38:17 -0400
+
+haskell-aeson-qq (0.8.1-3) unstable; urgency=medium
+
+  * Upload to unstable as part of GHC 8 transition.
+
+ -- Clint Adams <clint@debian.org>  Thu, 27 Oct 2016 18:32:22 -0400
+
+haskell-aeson-qq (0.8.1-2) experimental; urgency=medium
+
+  [ Dmitry Bogatov ]
+  * Use secure (https) uri in Vcs-Git field in 'debian/control'
+  * Bump standards version to 3.9.8 (no changes needed)
+
+  [ Clint Adams ]
+  * Temporarily build-depend on ghc 8.
+
+ -- Clint Adams <clint@debian.org>  Mon, 17 Oct 2016 15:24:21 -0400
+
+haskell-aeson-qq (0.8.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Thu, 03 Dec 2015 23:49:39 -0500
+
+haskell-aeson-qq (0.8.0-2) unstable; urgency=medium
+
+  * Switch Vcs-Git/Vcs-Browser headers to new location.
+
+ -- Clint Adams <clint@debian.org>  Thu, 03 Dec 2015 14:54:03 -0500
+
+haskell-aeson-qq (0.8.0-1) experimental; urgency=medium
+
+  * debian/copyright: debian/*, not */debian
+  * New upstream release
+  * Depend on haskell-devscripts >= 0.10 to ensure that this package
+    builds against GHC in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 20 Aug 2015 10:26:55 +0200
+
+haskell-aeson-qq (0.7.4-3) unstable; urgency=medium
+
+  * Rebuild due to haskell-devscripts bug affecting the previous
+
+ -- Joachim Breitner <nomeata@debian.org>  Tue, 28 Apr 2015 23:58:15 +0200
+
+haskell-aeson-qq (0.7.4-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 27 Apr 2015 11:47:33 +0200
+
+haskell-aeson-qq (0.7.4-1) experimental; urgency=low
+
+  * Initial release
+
+ -- Joachim Breitner <nomeata@debian.org>  Wed, 22 Apr 2015 13:10:48 +0200

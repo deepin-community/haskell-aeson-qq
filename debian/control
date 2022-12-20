@@ -1,0 +1,98 @@
+Source: haskell-aeson-qq
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Joachim Breitner <nomeata@debian.org>,
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends:
+ cdbs,
+ debhelper (>= 10),
+ ghc (>= 8.4.3),
+ ghc-prof,
+ haskell-devscripts (>= 0.13),
+ libghc-aeson-dev,
+ libghc-aeson-dev (>= 0.6),
+ libghc-aeson-prof,
+ libghc-attoparsec-dev,
+ libghc-attoparsec-prof,
+ libghc-base-compat-dev,
+ libghc-base-compat-prof,
+ libghc-hspec-dev,
+ libghc-scientific-dev,
+ libghc-scientific-prof,
+ libghc-src-meta-dev,
+ libghc-src-meta-dev (>= 0.1.0),
+ libghc-src-meta-prof,
+ libghc-vector-dev,
+ libghc-vector-prof,
+ libghc-hspec-dev,
+Build-Depends-Indep: ghc-doc,
+ libghc-aeson-doc,
+ libghc-attoparsec-doc,
+ libghc-base-compat-doc,
+ libghc-scientific-doc,
+ libghc-src-meta-doc,
+ libghc-vector-doc,
+Standards-Version: 4.1.4
+Homepage: https://github.com/sol/aeson-qq#readme
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-aeson-qq
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-aeson-qq]
+X-Description: JSON quasiquoter for Haskell
+ This package provides a JSON quasiquoter for Haskell. It exposes the function
+ `aesonQQ` that compile-time converts a string representation of a JSON value
+ into a `Data.Aeson.Value`.
+
+Package: libghc-aeson-qq-dev
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Conflicts:
+ ${haskell:Conflicts},
+Provides:
+ ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-aeson-qq-prof
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Conflicts:
+ ${haskell:Conflicts},
+Provides:
+ ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-aeson-qq-doc
+Architecture: all
+Section: doc
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Conflicts:
+ ${haskell:Conflicts},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
